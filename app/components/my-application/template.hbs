@@ -1,3 +1,4 @@
+{{!-- NAVBAR START --}}
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     {{navbar-header}}
@@ -20,8 +21,12 @@
     </div>
   </div>
 </nav>
+{{!-- NAVBAR END --}}
 
-<h1>Welcome to Ember!</h1>
+<h1>Welcome to typeOne!</h1>
+{{#if isAuthenticated}}
+<button type="button" class="btn btn-success">Enter</button>
+{{/if}}
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
