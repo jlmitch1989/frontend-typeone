@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('posts');
   this.route('post', { path: '/posts/:post_id' });
+  // this.route('post/comments', { path: '/posts/:post_id/comments' });
 });
 
 export default Router;

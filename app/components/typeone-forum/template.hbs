@@ -1,1 +1,5 @@
-{{yield}}
+<ul>
+  {{#each post.comments as |comment|}}
+    {{typeone-forum/comment comment=comment}}
+  {{/each}}
+</ul>

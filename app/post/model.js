@@ -5,5 +5,5 @@ export default DS.Model.extend({
   content: DS.attr('string'),
   // userId: DS.attr('string'),
   // added this to add relationship
-  // user: DS.belongsTo('user')
+  comments: DS.hasMany('comment')
 });
