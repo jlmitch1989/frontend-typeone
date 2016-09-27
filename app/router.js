@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('posts');
   this.route('post', { path: '/posts/:post_id' });
   // this.route('post/comments', { path: '/posts/:post_id/comments' });
+  this.route('app');
 });
 
 export default Router;

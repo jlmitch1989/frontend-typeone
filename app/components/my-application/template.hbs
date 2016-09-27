@@ -23,17 +23,9 @@
 </nav>
 {{!-- NAVBAR END --}}
 
-<h1 class="welcome">Welcome to typeOne!</h1>
-{{#if isAuthenticated}}
-<div class="enter-button">
-  <button type="button" class="btn btn-success">Enter</button>
-</div>
-{{/if}}
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="col-md-8 col-md-offset-2">
-  {{outlet}}
-</div>
+{{outlet}}
