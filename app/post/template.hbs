@@ -7,3 +7,10 @@
 
 {{!-- shows comments on post --}}
 {{typeone-forum post=model}}
+
+<form {{action 'createComment' on='submit'}}>
+  {{input placeholder='New Item'
+            class='input-group form-control'
+            value=newComment.body
+      }}
+</form>

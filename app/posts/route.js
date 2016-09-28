@@ -1,13 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model () {
-    return this.get('store').findAll('post');
-  },
+  model(params) {
+    return this.get('store').query('post', params);
+  }
 
-  actions: {
-    deletePosts (post) {
-      post.destroyRecord();
-    },
-  },
+  // model () {
+  //   return this.get('store').findAll('post');
+  // },
+
+  // actions: {
+  //   deletePosts (post) {
+  //     post.destroyRecord();
+  //   },
+  // },
 });
