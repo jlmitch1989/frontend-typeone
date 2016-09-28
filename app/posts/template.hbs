@@ -1,5 +1,15 @@
-{{!-- invokes card --}}
+<section>
+  <h1>typeOne</h1>
 
+  <p>Create a thread and share your experiences here</p>
+
+
+  <button type="button" class="btn btn-success btn-xs ">Create Thread</button>
+</section>
+
+{{!-- invokes post.title card --}}
 {{#each model as |post|}}
-  {{typeone-forum/card post=post}}
+  {{typeone-forum/card post=post
+                      deletePost='deletePost'
+                      }}
 {{/each}}
