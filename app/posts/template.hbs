@@ -4,12 +4,12 @@
   <p>Create a thread and share your experiences here</p>
 
 
-  <button type="button" class="btn btn-success btn-xs ">Create Thread</button>
+  <button type="button" class="btn btn-success btn-xs" {{ action 'create'}}>Create Thread</button>
 </section>
 
 {{!-- invokes post.title card --}}
 {{#each model as |post|}}
   {{typeone-forum/card post=post
-                      deletePost='deletePost'
+                      delete='deletePosts'
                       }}
 {{/each}}
