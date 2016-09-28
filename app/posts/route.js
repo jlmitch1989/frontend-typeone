@@ -9,11 +9,11 @@ export default Ember.Route.extend({
 
   model(params) {
     return this.get('store').query('post', params);
-  }
+  },
 
-  // actions: {
-  //   deletePosts (post) {
-  //     post.destroyRecord();
-  //   },
-  // },
+  actions: {
+    deletePosts (post) {
+      post.destroyRecord();
+    },
+  },
 });
