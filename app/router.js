@@ -15,6 +15,7 @@ Router.map(function () {
   this.route('post', { path: '/posts/:post_id' });
   // this.route('post/comments', { path: '/posts/:post_id/comments' });
   this.route('app');
+  this.route('create');
 });
 
 export default Router;

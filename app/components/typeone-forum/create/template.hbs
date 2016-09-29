@@ -1,0 +1,9 @@
+<section>
+  <form {{action "createNewPost" on="submit"}}>
+    {{input value=newPost.title placeholder="Title..." type="text" cols=25 rows=10}}
+
+    {{textarea value=newPost.content placeholder="Description..." cols="137" rows="6"}}
+
+    <button type="submit" class="btn btn-success">Create</button>
+  </form>
+</section>
