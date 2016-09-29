@@ -1,6 +1,8 @@
 <ul>
   {{#each post.comments as |comment|}}
-    {{typeone-forum/comment comment=comment}}
+    {{typeone-forum/comment comment=comment
+                            deleteComment='deleteComment'
+                            }}
   {{/each}}
 </ul>
 

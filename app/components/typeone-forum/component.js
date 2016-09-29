@@ -12,7 +12,11 @@ export default Ember.Component.extend({
       this.sendAction('comment', data);
       // this clears the form field
       this.set('newComment.body', null);
-      console.log(data);
+      // console.log(data);
+    },
+
+    deleteComment (comment) {
+      comment.destroyRecord();
     },
   },
 });
