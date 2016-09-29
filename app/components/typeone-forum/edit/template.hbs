@@ -1,0 +1,15 @@
+
+  <form {{action "save" on="submit"}}>
+
+    {{input value=post.title placeholder="Update your title..." type="text" cols=25 rows=10}}
+    {{!-- <textarea value=post.content class="form-control" id="exampleTextarea"  placeholder="Update your description..." type="text" rows="3">
+    </textarea> --}}
+
+    <button type="submit" class="btn btn-success">Update</button>
+  </form>
+
+  <form {{action "save" on="submit"}}>
+    {{input value=post.content placeholder="Update your title..." type="text" cols=25 rows=10}}
+
+    <button type="submit" class="btn btn-success">Update</button>
+  </form>

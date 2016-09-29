@@ -15,5 +15,9 @@ export default Ember.Route.extend({
     deletePosts (post) {
       post.destroyRecord();
     },
+    
+    editPosts (post) {
+      this.transitionTo('posts/edit', post);
+    },
   },
 });
