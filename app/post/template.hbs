@@ -1,16 +1,11 @@
 {{!-- {{typeone-forum/card post=model}} --}}
 
-{{!-- invokes post-structure component --}}
+{{!-- invokes post-structure component  --}}
 {{typeone-forum/post-structure post=model
                               delete='deletePost'
                               }}
 
 {{!-- shows comments on post --}}
-{{typeone-forum post=model}}
-
-<form {{action 'createComment' on='submit'}}>
-  {{input placeholder='New Item'
-            class='input-group form-control'
-            value=newComment.body
-      }}
-</form>
+{{typeone-forum post=model
+                comment='addComment'
+              }}

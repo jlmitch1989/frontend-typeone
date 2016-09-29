@@ -3,3 +3,10 @@
     {{typeone-forum/comment comment=comment}}
   {{/each}}
 </ul>
+
+<form {{action 'addComment' on='submit'}}>
+  {{input placeholder='Add comment'
+            class='input-group form-control'
+            value=newComment.body
+      }}
+</form>

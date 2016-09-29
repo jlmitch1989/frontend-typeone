@@ -5,7 +5,8 @@ export default Ember.Route.extend({
     createNewPost (data) {
       // console.log(data);
       let post = this.get('store').createRecord('post', data);
-      post.save();
+      post.save()
+        .then(()=>this.transitionTo('posts'));
     },
 
   },
