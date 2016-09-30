@@ -1,7 +1,8 @@
 
 <li>{{comment.body}}</li>
 
-
+{{#if comment.editable}}
   <button class="btn btn-xs btn-danger"{{action 'deleteComment'}}>
     delete
   </button>
+{{/if}}

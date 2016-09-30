@@ -1,9 +1,15 @@
+{{#if post.editable}}
 <button type="button" class="close" {{action 'delete'}} data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+{{/if}}
+
 
 {{#link-to 'post' post}}
   <h3 class="post-header">{{post.title}}</h3>
 {{/link-to}}
 
+
+{{#if post.editable}}
 <button class="btn btn-sx btn-primary" {{ action 'edit'}}>
   Edit
 </button>
+{{/if}}
