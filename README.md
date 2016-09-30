@@ -1,36 +1,35 @@
-Links:
-deployedApp(frontEnd):
-  https://jlmitch1989.github.io/frontend-typeone/
-deployedApp(backEnd):
-  https://floating-anchorage-75081.herokuapp.com/
-FrontEnd Repo:
-  https://github.com/jlmitch1989/frontend-typeone
-BackEnd Repo:
+# typeOne SPA
+
+deployedApp(frontEnd): <br>
+  https://jlmitch1989.github.io/frontend-typeone/ <br>
+deployedApp(backEnd): <br>
+  https://floating-anchorage-75081.herokuapp.com/ <br>
+FrontEnd Repo: <br>
+  https://github.com/jlmitch1989/frontend-typeone <br>
+BackEnd Repo: <br>
   https://github.com/jlmitch1989/backend-typeone
 
-App Description:
+## App Description:
 My original vision for this app was for it to be a place for people needing
 support within the Type-One community. I created a forum style application which
 allows users to post and comment on posts. I intend on eventually adding a calendar
 API which will allow users to post local events for supporting those with Type-One
 Diabetes.
 
-
-Associations:
-User has many posts
-User has many comments
-Posts has many comments
-
-
-Technologies Used:
-Ruby on Rails
-Ember.js
-HTML
-CSS
+## Technologies Used:
+Ruby on Rails <br>
+Ember.js <br>
+HTML <br>
+CSS <br>
 PostgreSQL
 
 
-User Stories:
+## Wireframes:
+https://classic.moqups.com/jlmitchwd@gmail.com/GQaZzvRP <br>
+https://classic.moqups.com/jlmitchwd@gmail.com/GQaZzvRP <br>
+https://classic.moqups.com/jlmitchwd@gmail.com/GQaZzvRP
+
+## User Stories:
 	As a user, I want to sign-up/sign-in, so I can be a part of this community.
 
 	As a user, I want to be able to interact with a calender, so I can see local Boston events dealing with Type-1 Diabetes.
@@ -42,7 +41,7 @@ User Stories:
 	As a user, I want to be able to add local events to the calendar, so others can be aware.
 
 
-Wireframes:
-https://classic.moqups.com/jlmitchwd@gmail.com/GQaZzvRP
-https://classic.moqups.com/jlmitchwd@gmail.com/GQaZzvRP
-https://classic.moqups.com/jlmitchwd@gmail.com/GQaZzvRP
+## Associations:
+User has many posts <br>
+User has many comments <br>
+Posts has many comments
