@@ -1,4 +1,4 @@
 {{hamburger-menu}}
-{{#link-to "application" class="navbar-brand"}}Home{{/link-to}}
-{{#link-to "posts" (query-params user=null) class="navbar-brand"}}Forum{{/link-to}}
-{{#link-to "posts" (query-params user='current') class="navbar-brand"}}My Threads{{/link-to}}
+{{#link-to "application" class="navbar-brand"}}<span class="nav-buttons">Home</span>{{/link-to}}
+{{#link-to "posts" (query-params user=null) class="navbar-brand"}}<span class="nav-buttons">Community</span>{{/link-to}}
+{{#link-to "posts" (query-params user='current') class="navbar-brand"}}<span class="nav-buttons">My Posts</span>{{/link-to}}

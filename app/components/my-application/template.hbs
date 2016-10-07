@@ -1,6 +1,6 @@
 {{!-- NAVBAR START --}}
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container-fluid whole-nav">
     {{navbar-header}}
 
     <div class="collapse navbar-collapse" id="navigation">
@@ -11,11 +11,11 @@
       </ul> --}}
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
-        <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
-        <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
+        <li>{{#link-to "change-password"}}<span class="nav-buttons">Change Password</span>{{/link-to}}</li>
+        <li><a href="#" {{action "signOut"}}><span class="nav-buttons">Sign Out</span></a></li>
         {{else}}
-        <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
-        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>
+        <li>{{#link-to "sign-up"}}<span class="nav-buttons">Sign-Up</span>{{/link-to}}</li>
+        <li>{{#link-to "sign-in"}}<span class="nav-buttons">Sign-In</span>{{/link-to}}</li>
         {{/if}}
       </ul>
     </div>

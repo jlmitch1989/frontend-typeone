@@ -1,6 +1,40 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
+// NAVBAR STYLES
+.whole-nav {
+  background: #1A89D7;
+  // border-color: #003459;
+}
+
+.nav-buttons {
+  color: #ffffff;
+}
+// NAVBAR STYLES END
+
+// PAGE STYLINGS
+.page-body {
+  background: #232323;
+}
+
+// HOME PAGE
+.welcome {
+  color: #ffffff;
+  font-size: 100px;
+  font-family: 'Caveat Brush', cursive;
+}
+
 .welcome-section {
+  color: #ffffff;
   text-align: center;
 }
+
+.title-O {
+  color: #1A89D7;
+}
+
+.site-descript {
+  font-size: 25px;
+  padding: 30px 150px;
+}
+// HOME PAGE END
