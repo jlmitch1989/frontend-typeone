@@ -18,10 +18,10 @@
 }
 
 // HOME PAGE
-.welcome {
+.site-name {
   color: #ffffff;
-  font-size: 100px;
   font-family: 'Caveat Brush', cursive;
+  font-size: 100px;
 }
 
 .welcome-section {
@@ -36,5 +36,19 @@
 .site-descript {
   font-size: 25px;
   padding: 30px 150px;
+  color: #ffffff;
 }
 // HOME PAGE END
+
+// COMMUNITY PAGE
+.community-descript {
+  text-align: center;
+}
+
+.community-board {
+  text-align: center;
+}
+
+.community-posts {
+
+}

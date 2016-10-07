@@ -1,16 +1,18 @@
-<section>
-  <h1>typeOne</h1>
+<section class="community-descript">
+  <h1 class="site-name">type<span class="title-O">O</span>ne</h1>
 
-  <p>Create a thread and share your experiences here</p>
+  <p class="site-descript">Create a thread and share your experiences here</p>
 
 
   <button type="button" class="btn btn-success btn-xs" {{action 'goCreate'}}>Create Thread</button>
 </section>
 
 {{!-- invokes post.title card --}}
-{{#each model as |post|}}
-  {{typeone-forum/card post=post
-                      delete='deletePosts'
-                      edit='editPosts'
-                      }}
-{{/each}}
+<section class="community-board">
+  {{#each model as |post|}}
+    {{typeone-forum/card post=post
+                        delete='deletePosts'
+                        edit='editPosts'
+                        }}
+  {{/each}}
+</section>
