@@ -14,7 +14,7 @@
 
 // PAGE STYLINGS
 .page-body {
-  background: #232323;
+  background: #000000;
 }
 
 // HOME PAGE
@@ -24,9 +24,17 @@
   font-size: 100px;
 }
 
-.welcome-section {
+.section-design {
+  background-color: #5C5C5C;
+  border: 3px dotted white;
+  border-radius: 15px;
   color: #ffffff;
   text-align: center;
+  text-shadow: 2px 2px 3px black;
+  margin: 30px auto;
+  // margin: 10px 0 30px 0;
+  max-width: 750px
+  // background-image: url('type-one-diabetes.png');
 }
 
 .title-O {
@@ -41,14 +49,67 @@
 // HOME PAGE END
 
 // COMMUNITY PAGE
-.community-descript {
-  text-align: center;
+#create-button {
+  margin-bottom: 20px;
+  background: #146DAA;
+  border-color: #fff;
+  color: #fff;
+  font-size: 22px;
+  height: 40px;
+  width: 215px;
+  box-shadow: 0px 0px 20px white;
 }
 
-.community-board {
-  text-align: center;
+#edit-button {
+  background: #81C934;
+  border-color: #5B8266;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  height: 40px;
+  width: 55px;
+  box-shadow: 0px 0px 20px #81C934;
 }
 
-.community-posts {
+#delete-button {
+  background: #D90429;
+  border-color: #7D1128;
+  border-radius: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 0px 20px #D90429;
+}
 
+.community-title {
+  color: #ffffff;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 100px;
+  margin-bottom: 40px;
+}
+
+table {
+  border: 2px solid white;
+  background-color: #1A89D7;
+  margin: 20px auto;
+}
+
+td {
+  border: 2px solid white;
+  padding: 0.5rem;
+  min-width: 400px;
+}
+
+.button-section {
+  min-width: 150px;
+}
+
+.post-title {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
