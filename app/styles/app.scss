@@ -43,7 +43,7 @@
 
 .site-descript {
   font-size: 25px;
-  padding: 30px 150px;
+  // padding: 30px 150px;
   color: #ffffff;
 }
 // HOME PAGE END
@@ -101,7 +101,7 @@ table {
 td {
   border: 2px solid white;
   padding: 0.5rem;
-  min-width: 620px;
+  width: 620px;
   max-width: 620px;
   position: relative;
 }
@@ -256,4 +256,58 @@ td #edit-button {
   margin-left: 85px;
   max-width: 600px;
   overflow-wrap: break-word;
+}
+
+// MEDIA QUERIES
+@media only screen
+   and (max-width : 321px) {
+   .nav-buttons {
+     font-size: 2px;
+   }
+
+   .site-name {
+     font-size: 85px;
+   }
+
+   .community-title {
+     font-size: 65px;
+   }
+
+   td {
+     min-width:225px;
+     max-width: 225px;
+   }
+}
+
+@media only screen
+   and (max-width : 361px) {
+   .site-name {
+     font-size: 90px;
+   }
+
+   .community-title {
+     font-size: 65px;
+   }
+}
+
+@media only screen
+   and (max-width : 450px) {
+   .community-title {
+     font-size: 60px;
+   }
+}
+
+@media only screen
+   and (max-width : 560px) {
+   td {
+     max-width: 350px;
+     min-width: 30px;
+   }
+}
+
+@media only screen
+   and (max-width : 685px) {
+   td {
+     max-width: 500px;
+   }
 }
