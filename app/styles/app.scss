@@ -96,12 +96,29 @@ table {
   border: 2px solid white;
   background-color: #1A89D7;
   margin: 20px auto;
+  min-height: 155px;
+  max-width: 750px;
 }
 
 td {
   border: 2px solid white;
   padding: 0.5rem;
-  min-width: 400px;
+  min-width: 620px;
+  max-width: 620px;
+  position: relative;
+}
+
+// Delete button on user posts
+td button {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+td #edit-button {
+  left: 5px;
+  position: absolute;
+  top: 10px;
 }
 
 .button-section {
@@ -110,6 +127,69 @@ td {
 
 .post-title {
   color: #ffffff;
-  text-decoration: none;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin: 55px auto;
+  max-width: 600px;
+  overflow-wrap: break-word;
+}
+
+// POST PAGE
+.post-design {
+  background-color: #5C5C5C;
+  border: 3px dotted white;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  margin: 30px auto;
+  // margin: 10px 0 30px 0;
+  max-width: 750px;
+  position: relative;
+}
+
+.post-content {
+  font-size: 20px;
+  margin: 25px auto;
+  max-width: 600px;
+  overflow-wrap: break-word;
+}
+
+.post-design button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+// COMMENTS
+.comment-design {
+  background-color: #1A89D7;
+  border: 3px dotted white;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 3px #000000;
+  margin: 30px auto;
+  // margin: 10px 0 30px 0;
+  max-width: 750px;
+  min-height: 55px;
+  position: relative;
+}
+
+.comment-design button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.comment-form {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.comment {
+  font-size: 20px;
+  margin-right: 85px;
+  margin-left: 85px;
+  max-width: 600px;
+  overflow-wrap: break-word;
 }

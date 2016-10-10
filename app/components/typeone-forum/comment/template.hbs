@@ -1,8 +1,9 @@
+<section class="comment-design">
+  <p class="comment">{{comment.body}}</p>
 
-<li>{{comment.body}}</li>
-
-{{#if comment.editable}}
-  <button class="btn btn-xs btn-danger"{{action 'deleteComment'}}>
-    delete
-  </button>
-{{/if}}
+  {{#if comment.editable}}
+    <button id="delete-button" class="btn btn-primary btn-sx" {{ action 'deleteComment'}}>
+      X
+    </button>
+  {{/if}}
+</section>

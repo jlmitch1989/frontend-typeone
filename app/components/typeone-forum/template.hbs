@@ -1,14 +1,15 @@
-<ul>
-  {{#each post.comments as |comment|}}
-    {{typeone-forum/comment comment=comment
-                            deleteComment='deleteComment'
-                            }}
-  {{/each}}
-</ul>
-
-<form {{action 'addComment' on='submit'}}>
+<form class="comment-form" {{action 'addComment' on='submit'}}>
   {{input placeholder='Add comment'
             class='input-group form-control'
             value=newComment.body
       }}
 </form>
+
+
+<p>
+  {{#each post.comments as |comment|}}
+    {{typeone-forum/comment comment=comment
+                            deleteComment='deleteComment'
+                            }}
+  {{/each}}
+</p>

@@ -5,12 +5,11 @@
         {{#link-to 'post' post}}
           <h1 class="post-title">{{post.title}}</h1>
         {{/link-to}}
-      
-        {{#if post.editable}}
-        <button id="delete-button" class="btn btn-primary btn-sx" {{ action 'delete'}}>
-          X
-        </button>
 
+        {{#if post.editable}}
+          <button id="delete-button" class="btn btn-primary btn-sx" {{ action 'delete'}}>
+            X
+          </button>
         {{/if}}
 
         {{#if post.editable}}

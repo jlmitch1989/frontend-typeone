@@ -1,11 +1,13 @@
-<section class="community-posts">
-  {{#if post.editable}}
-    <button type="button" class="close" {{action 'delete'}} data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  {{/if}}
+<section class="post-design">
+  <h3 class="post-title">{{post.title}}</h3>
 
-  <h3>{{post.title}}</h3>
-
-  <p>
+  <p class="post-content">
     {{post.content}}
   </p>
+
+  {{#if post.editable}}
+    <button id="delete-button" class="btn btn-primary btn-sx" {{ action 'delete'}}>
+      X
+    </button>
+  {{/if}}
 </section>
